@@ -1,0 +1,21 @@
+public class FibonacciSeries {
+
+    public static void main(String[] args) {
+        int n = 10; // change n to generate a different number of terms in the series
+        int a = 0;
+        int b = 1;
+        int c;
+        
+        System.out.print(a + " " + b); // print the first two terms
+        
+        for (int i = 2; i < n; i++) {
+            c = a + b;
+            System.out.print(" " + c);
+            a = b;
+            b = c;
+        }
+    }
+}
+In this example, we initialize the variables a and b to 0 and 1, respectively, which are the first two terms of the Fibonacci series.
+We then use a for loop to generate the next n terms of the series. In each iteration of the loop, we calculate the next term c by adding the previous two terms a and b.
+We then print out c and update the values of a and b to continue the sequence.
